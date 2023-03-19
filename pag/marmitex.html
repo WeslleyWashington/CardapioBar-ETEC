@@ -3,13 +3,30 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cardapio do Bar</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
-            background-image: url(img/fundonovo.jpg)
+            background-image: url('../img/Marmitex/fundo.jfif');
+        }
+        
+        #navbar {
+            background-color: rgba(58, 57, 57, 0.822);
+        }
+        
+        .botao-personalizado {
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.801);
+            color: rgb(0, 0, 0);
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
         }
         
         #food {
@@ -74,17 +91,6 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        .botao-personalizado {
-            border: 2px solid rgb(0, 0, 0);
-            background-color: rgba(255, 255, 255, 0.801);
-            color: rgb(0, 0, 0);
-            font-family: Sans-serif;
-            font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-        
         .botao-personalizado2 {
             border: 2px solid rgb(44, 44, 44);
             background-color: rgba(255, 255, 255, 0.801);
@@ -102,13 +108,26 @@
 
 <body>
 
+    <header>
+
+        <div id="navbar" class="navbar navbar-dark  shadow-sm">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>Voltar ao Inicio</strong>
+                </a>
+
+                </button>
+            </div>
+        </div>
+    </header>
+
     <main>
 
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div id="food" class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light"><strong>CARDAPIO</strong></h1>
-                    <p class="lead text-muted"><strong>Bem Vindos ao nosso cardapio completo com os Melhores Pratos, Bebidas, Porções e Sobremesas!</strong></p>
+                    <h1 class="fw-light">Marmitex</h1>
+                    <p class="lead text-muted">Temos Diversas Marmitex (P, M, G)</p>
 
                 </div>
             </div>
@@ -118,104 +137,88 @@
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
+                    <div class="col" width="100%" height="225">
                         <div class="card shadow-sm">
-                            <img src="img/comidas.jpg" alt="Pratos" width="100%" height="225">
+                            <img src="../img/Marmitex/marmita1.jpg" width="100%" height="225" alt="">
                             <div class="card-body">
-                                <h1>Almoços</h1>
-                                <p class="card-text">Pratos Diversos</p>
+                                <h1>Marmitex 1</h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <p class="float-end mb-1">
-                                            <a class="botao-personalizado2" href="pag/comida.html">Acessar</a>
-                                        </p>
-                                    </div>
+                                    <p class="float-end mb-1">
+                                        <a class="botao-personalizado2" href="#">Saiba Mais</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" width="100%" height="225">
                         <div class="card shadow-sm">
-                            <img src="img/lanches.jpg" alt="Lanches" width="100%" height="225">
+                            <img src="../img/Marmitex/marmita2.jpg" width="100%" height="225" alt="">
                             <div class="card-body">
-                                <h1>Lanches</h1>
-                                <p class="card-text">Lanches Completos</p>
+                                <h1>Marmitex 2</h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <p class="float-end mb-1">
-                                            <a class="botao-personalizado2" href="pag/lanches.html">Acessar</a>
-                                        </p>
-                                    </div>
+                                    <p class="float-end mb-1">
+                                        <a class="botao-personalizado2" href="#">Saiba Mais</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" width="100%" height="225">
                         <div class="card shadow-sm">
-                            <img src="img/porcoes1.avif" alt="Porções" width="100%" height="225">
+                            <img src="../img/Marmitex/marmita3.jpg" width="100%" height="225" alt="">
                             <div class="card-body">
-                                <h1>Porções</h1>
-                                <p class="card-text">Tipos de Porções Mistas</p>
+                                <h1>Marmitex 3</h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <p class="float-end mb-1">
-                                            <a class="botao-personalizado2" href="pag/porcoes.html">Acessar</a>
-                                        </p>
-                                    </div>
+                                    <p class="float-end mb-1">
+                                        <a class="botao-personalizado2" href="#">Saiba Mais</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col" width="100%" height="225">
                         <div class="card shadow-sm">
-                            <img src="img/bebidas1.jpg" alt="Bebidas" width="100%" height="225">
+                            <img src="../img/Marmitex/marmita4.webp" width="100%" height="225" alt="">
                             <div class="card-body">
-                                <h1>Bebidas</h1>
-                                <p class="card-text">Bebidas Com e Sem Alcool</p>
+                                <h1>Marmitex 4</h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <p class="float-end mb-1">
-                                            <a class="botao-personalizado2" href="pag/bebidas.html">Acessar</a>
-                                        </p>
-                                    </div>
+                                    <p class="float-end mb-1">
+                                        <a class="botao-personalizado2" href="#">Saiba Mais</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" width="100%" height="225">
                         <div class="card shadow-sm">
-                            <img src="img/sobremesas1.jpg" alt="Sobremesas" width="100%" height="225">
+                            <img src="../img/Marmitex/marmita5.jpg" width="100%" height="225" alt="">
                             <div class="card-body">
-                                <h1>Sobremesas</h1>
-                                <p class="card-text">Sobremesas Diversas</p>
+                                <h1>Marmitex 5</h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <p class="float-end mb-1">
-                                            <a class="botao-personalizado2" href="pag/sobremesas.html">Acessar</a>
-                                        </p>
-                                    </div>
+                                    <p class="float-end mb-1">
+                                        <a class="botao-personalizado2" href="#">Saiba Mais</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" width="100%" height="225">
                         <div class="card shadow-sm">
-                            <img src="img/marmitex.jpg" alt="" width="100%" height="225">
+                            <img src="../img/Marmitex/marmita6.jpg" width="100%" height="225" alt="">
                             <div class="card-body">
-                                <h1>Marmitex</h1>
-                                <p class="card-text">Marmitas (P, M, G)</p>
+                                <h1>Marmitex 6</h1>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <p class="float-end mb-1">
-                                            <a class="botao-personalizado2" href="pag/marmitex.html">Acessar</a>
-                                        </p>
-                                    </div>
+                                    <p class="float-end mb-1">
+                                        <a class="botao-personalizado2" href="#">Saiba Mais</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -224,11 +227,10 @@
             <p class="float-end mb-1">
                 <a class="botao-personalizado" href="#">Volte ao Topo</a>
             </p>
-        </div>
     </footer>
 
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
