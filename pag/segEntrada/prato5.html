@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>PagModelo</title>
+    <title>Pedido</title>
 
     <style>
+        body {
+            background-image: url(../../img/fundonovo.jpg);
+        }
+        
         @media (min-width: 992px) {
             .rounded-lg-3 {
                 border-radius: .3rem;
@@ -42,8 +46,8 @@
             color: rgb(0, 0, 0);
             font-family: Sans-serif;
             font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
+            padding: 20px 30px;
+            border-radius: 10px;
             text-decoration: none;
         }
         
@@ -53,16 +57,56 @@
             color: rgb(0, 0, 0);
             font-family: Sans-serif;
             font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
+            padding: 20px 30px;
+            border-radius: 10px;
             text-decoration: none;
         }
         
-        .valorprato {
+        .botao-personalizado4 {
+            margin-left: 15px;
             position: relative;
-            padding: 25px;
-            background-color: white;
+            align-items: center;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        
+        .valorprato {
+            font-size: 60px;
+            position: relative;
             color: green;
+            align-items: left;
+            margin-bottom: 35px;
+        }
+        
+        .col-lg-6 {
+            font-family: sans-serif;
+            color: black;
+        }
+        
+        #cartao {
+            border: 1px solid rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.918);
+            color: rgb(0, 0, 0);
+            border-radius: 8px;
+            height: 50%;
+            left: auto;
+        }
+        
+        #imagem {
+            margin-top: -95px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 8px;
+        }
+        
+        #titulo {
+            margin-top: -80px;
+            font-size: 90px;
+            text-align: center;
         }
     </style>
 
@@ -78,29 +122,34 @@
             </div>
         </div>
 
-        <div class="container col-xxl-8 px-4 py-5">
+        <div class="container col-xxl-8 px-4 py-5" id="cartao">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Prato N°1</h1>
-                    <p class="lead">O prato consiste em uma porção de arroz cozido acompanhado por fatias de picanha suculentas grelhadas e batatas fritas crocantes. É um prato saboroso e nutritivo, que combina carboidratos do arroz com proteínas da carne e vitaminas
-                        saudáveis ​​das batatas. A picanha é um corte de carne bovina macia e saborosa, que é tradicionalmente preparada em churrascarias brasileiras. As batatas fritas são um acompanhamento clássico que adiciona uma textura crocante e
-                        um sabor delicioso ao prato. É uma refeição completa e satisfatória que pode ser apreciada em várias ocasiões.</p>
+                    <h1 id="titulo" class="display-5 fw-bold lh-1 mb-3">Prato N°5</h1>
+                    <p id="textoP" class="lead">Este prato é uma experiência gastronômica incrível, feita com ingredientes de qualidade excepcional. Cada garfada é uma explosão de sabor, graças à picanha suculenta grelhada e às batatas fritas crocantes que harmonizam perfeitamente
+                        com o arroz cozido. A carne bovina macia e saborosa é cuidadosamente selecionada e preparada com maestria, tornando cada mordida uma delícia para os sentidos. As batatas fritas são crocantes por fora e macias por dentro, o complemento
+                        perfeito para o saboroso prato. Com nutrientes essenciais e um sabor indescritível, este prato é a escolha perfeita para aqueles que procuram uma refeição satisfatória e nutritiva.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <h2 class="valorprato">R$ 37,00</h2>
                     </div>
-                    <div>
+                    <div class="botoesPag">
                         <a class="botao-personalizado2" href="#">Confirmar</a>
                         <a class="botao-personalizado3" href="../comida.html">Cancelar</a>
                     </div>
                 </div>
 
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="../../img/Pratos/prato1.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img id="imagem" src="../../img/Pratos/prato5.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" margin-top="-40px">
                 </div>
             </div>
         </div>
     </main>
+    <footer class="text-muted py-5">
+        <div>
+            <p><span class="botao-personalizado4"> Weslley Washington - Desenvolvedor (Exemplo de Cardapio) &copy;</span></p>
+        </div>
+    </footer>
 
     <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
