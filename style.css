@@ -1,5 +1,8 @@
 body {
-    background-image: url(img/fundonovo.jpg)
+    background-image: url(img/fundonovo.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
 }
 
 #food {
