@@ -88,8 +88,7 @@ body {
     position: relative;
     display: flex;
     align-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 35px;
     margin-bottom: 10px;
     max-width: 100%;
     max-height: 100%;

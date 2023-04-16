@@ -8,28 +8,16 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../img/logo.png" type="imagem.png">
+
 
     <style>
         body {
             background-image: url('../img/Lanches/fundo.jpg');
-            background-repeat: repeat;
-            background-position: center center;
-            background-size: auto;
         }
         
         #navbar {
             background-color: rgba(58, 57, 57, 0.822);
-        }
-        
-        .botao-personalizado {
-            border: 2px solid rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            font-family: Sans-serif;
-            font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
         }
         
         #food {
@@ -94,18 +82,42 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        .botao-personalizado2 {
-            border: 2px solid rgb(44, 44, 44);
-            background-color: rgba(255, 255, 255, 0.801);
-            color: rgb(44, 44, 44);
+        #cardizin {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        
+        #image {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        
+        #valor {
+            color: rgb(25, 136, 84);
+        }
+        
+        #textosFilhos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        #botao-personalizado {
             font-family: Sans-serif;
-            font-size: 15px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
+        }
+        
+        #botao-personalizado2 {
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
         }
     </style>
-
 
 </head>
 
@@ -115,8 +127,8 @@
 
         <div id="navbar" class="navbar navbar-dark  shadow-sm">
             <div class="container">
-                <a href="../index.html" class="navbar-brand d-flex align-items-center">
-                    <strong class="botao-personalizado"> ⇦ Voltar ao Inicio</strong>
+                <a id="botao-personalizado" type="button" class="btn btn-light" href="../index.html" class="navbar-brand d-flex align-items-center">
+                    <strong> ⇦ Voltar ao Inicio</strong>
                 </a>
             </div>
         </div>
@@ -127,136 +139,153 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div id="food" class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Lanches</h1>
-                    <p class="lead text-muted">Temos Diversos Lanches</p>
+                    <h1 class="fw-light"><strong>Pratos</strong></h1>
+                    <p><strong>Temos Diversos Pratos</strong></p>
 
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
+        <div id="fundoCard" class="album py-5 bg-light">
             <div class="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche1.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 1</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche1.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="opacity:false">
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche1.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°1</strong></h1>
+                            <p class="card-text">2 Lanches Especiais</p>
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche2.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 2</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche2.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche3.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 3</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche3.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 70,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche1.html">Saiba Mais</a>
                         </div>
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche4.avif" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 4</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche4.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche2.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°2</strong></h1>
+                            <p class="card-text">Lanche Mega com Batata</p>
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche5.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 5</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche5.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche6.avif" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 6</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche6.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 35,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche2.html">Saiba Mais</a>
                         </div>
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche7.webp" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 7</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche7.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche3.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°3</strong></h1>
+                            <p class="card-text">2 Lanches com Pão Integral</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 90,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche3.html">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche8.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 8</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche8.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche4.avif" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°4</strong></h1>
+                            <p class="card-text">Lanche Dark com Pão Preto e Barbiecue</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 50,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche4.html">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Lanches/lanche9.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Especial 9</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/lanche/lanche9.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche5.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°5</strong></h1>
+                            <p class="card-text">Lanche com Molhos, Frista e Refrigerante</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche5.html">Saiba Mais</a>
                         </div>
                     </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche6.avif" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°6</strong></h1>
+                            <p class="card-text">Lanche Vegano</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 75,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche6.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche7.webp" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>lanche N°7</strong></h1>
+                            <p class="card-text">Lanche Especial 2 com Cebola Roxa</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 38,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche7.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche8.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>LancheN°8</strong></h1>
+                            <p class="card-text">Lanches Coloridos</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 27,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche8.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Lanches/lanche9.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°9</strong></h1>
+                            <p class="card-text">Lanche Especial 1 Com Tomate e Alface</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 25,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche9.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -266,7 +295,7 @@
     <footer class="text-muted py-5">
         <div class="container">
             <p class="float-end mb-1">
-                <a class="botao-personalizado" href="#">Volte ao Topo</a>
+                <a id="botao-personalizado2" type="button" class="btn btn-secondary" href="#">⇪ Volte ao Topo ⇪</a>
             </p>
     </footer>
 

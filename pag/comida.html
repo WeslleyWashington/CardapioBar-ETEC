@@ -8,28 +8,16 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../img/logo.png" type="imagem.png">
+
 
     <style>
         body {
             background-image: url('../img/Pratos/fundo2.avif');
-            background-repeat: repeat;
-            background-position: center center;
-            background-size: auto;
         }
         
         #navbar {
             background-color: rgba(58, 57, 57, 0.822);
-        }
-        
-        .botao-personalizado {
-            border: 2px solid rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            font-family: Sans-serif;
-            font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
         }
         
         #food {
@@ -94,15 +82,40 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        .botao-personalizado2 {
-            border: 2px solid rgb(44, 44, 44);
-            background-color: rgb(255, 255, 255);
-            color: rgb(44, 44, 44);
+        #cardizin {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        
+        #image {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        
+        #valor {
+            color: rgb(25, 136, 84);
+        }
+        
+        #textosFilhos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        #botao-personalizado {
             font-family: Sans-serif;
-            font-size: 15px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
+        }
+        
+        #botao-personalizado2 {
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
         }
     </style>
 
@@ -114,8 +127,8 @@
 
         <div id="navbar" class="navbar navbar-dark  shadow-sm">
             <div class="container">
-                <a href="../index.html" class="navbar-brand d-flex align-items-center">
-                    <strong class="botao-personalizado"> ⇦ Voltar ao Inicio</strong>
+                <a id="botao-personalizado" type="button" class="btn btn-light" href="../index.html" class="navbar-brand d-flex align-items-center">
+                    <strong> ⇦ Voltar ao Inicio</strong>
                 </a>
             </div>
         </div>
@@ -126,136 +139,153 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div id="food" class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Pratos</h1>
-                    <p class="lead text-muted">Temos Diversos Pratos</p>
+                    <h1 class="fw-light"><strong>Pratos</strong></h1>
+                    <p><strong>Temos Diversos Pratos</strong></p>
 
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
+        <div id="fundoCard" class="album py-5 bg-light">
             <div class="container">
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato1.webp" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 1</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato1.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="opacity:false">
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato1.webp" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°1</strong></h1>
+                            <p class="card-text">Prato de Picanha com Fritas e Salada</p>
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato2.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 2</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato2.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato3.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 3</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato3.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato1.html">Saiba Mais</a>
                         </div>
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato4.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 4</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato4.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato2.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°2</strong></h1>
+                            <p class="card-text">Prato de Filé de Frango e Salada</p>
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato5.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 5</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato5.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato6.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 6</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato6.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato2.html">Saiba Mais</a>
                         </div>
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato7.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 7</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato7.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato3.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°3</strong></h1>
+                            <p class="card-text">Prato Verde com Filé de Frango</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato3.html">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato8.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 8</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato8.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato4.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°4</strong></h1>
+                            <p class="card-text">Macarronada com Almondegas</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato4.html">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/Pratos/prato9.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Prato 9</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/segEntrada/prato9.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato5.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°5</strong></h1>
+                            <p class="card-text">Feijoada</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato5.html">Saiba Mais</a>
                         </div>
                     </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato6.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°6</strong></h1>
+                            <p class="card-text">Macarronada com Carne Moida</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato6.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato7.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°7</strong></h1>
+                            <p class="card-text">Lasanha Tradicional</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato7.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato8.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°8</strong></h1>
+                            <p class="card-text">Strogonoff</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato8.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Pratos/prato9.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Prato N°9</strong></h1>
+                            <p class="card-text">Salmão com Legumes e Verduras</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato9.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -265,7 +295,7 @@
     <footer class="text-muted py-5">
         <div class="container">
             <p class="float-end mb-1">
-                <a class="botao-personalizado" href="#">Volte ao Topo</a>
+                <a id="botao-personalizado2" type="button" class="btn btn-secondary" href="#">⇪ Volte ao Topo ⇪</a>
             </p>
     </footer>
 
