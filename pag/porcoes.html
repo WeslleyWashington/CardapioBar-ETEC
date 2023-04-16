@@ -8,29 +8,16 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="../img/logo.png" type="imagem.png">
+    <link rel="icon" href="../img/logotipo.png" type="imagem.png">
+
 
     <style>
         body {
             background-image: url('../img/porções/fundo.avif');
-            background-repeat: repeat;
-            background-position: center center;
-            background-size: auto;
         }
         
         #navbar {
             background-color: rgba(58, 57, 57, 0.822);
-        }
-        
-        .botao-personalizado {
-            border: 2px solid rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            font-family: Sans-serif;
-            font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
         }
         
         #food {
@@ -95,18 +82,42 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        .botao-personalizado2 {
-            border: 2px solid rgb(44, 44, 44);
-            background-color: rgba(255, 255, 255, 0.801);
-            color: rgb(44, 44, 44);
+        #cardizin {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        
+        #image {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        
+        #valor {
+            color: rgb(25, 136, 84);
+        }
+        
+        #textosFilhos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        #botao-personalizado {
             font-family: Sans-serif;
-            font-size: 15px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
+        }
+        
+        #botao-personalizado2 {
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
         }
     </style>
-
 
 </head>
 
@@ -116,8 +127,8 @@
 
         <div id="navbar" class="navbar navbar-dark  shadow-sm">
             <div class="container">
-                <a href="../index.html" class="navbar-brand d-flex align-items-center">
-                    <strong class="botao-personalizado"> ⇦ Voltar ao Inicio</strong>
+                <a id="botao-personalizado" type="button" class="btn btn-light" href="../index.html" class="navbar-brand d-flex align-items-center">
+                    <strong> ⇦ Voltar ao Inicio</strong>
                 </a>
             </div>
         </div>
@@ -128,96 +139,108 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div id="food" class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Porções</h1>
-                    <p class="lead text-muted">Temos Diversas Porções</p>
+                    <h1 class="fw-light"><strong>Porções</strong></h1>
+                    <p><strong>Temos Diversas Porções</strong></p>
 
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
+        <div id="fundoCard" class="album py-5 bg-light">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/porções/porcao1.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Porção 1</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/porcoes/porcao1.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/porções/porcao1.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Porção N°1</strong></h1>
+                            <p class="card-text">Porção Especial N°1</p>
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/porções/porcao2.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Porção 2</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/porcoes/porcao2.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/porções/porcao3.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Porção 3</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/porcoes/porcao3.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 85,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/porcoes/porcao1.html">Saiba Mais</a>
                         </div>
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/porções/porcao4.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Porção 4</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/porcoes/porcao4.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/porções/porcao2.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Porção N°2</strong></h1>
+                            <p class="card-text">Porção Especial N°2</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 70,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/porcoes/porcao2.html">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/porções/porcao5.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Porção 5</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/porcoes/porcao5.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/porções/porcao3.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Porção N°3</strong></h1>
+                            <p class="card-text">Porção Especial N°3</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 30,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/porcoes/porcao3.html">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div class="card shadow-sm">
-                            <img src="../img/porções/porcao6.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Porção 6</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/porcoes/porcao6.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/porções/porcao4.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Porção N°4</strong></h1>
+                            <p class="card-text">Porção Especial N°4</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 60,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/porcoes/porcao4.html">Saiba Mais</a>
                         </div>
                     </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/porções/porcao5.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Porção N°5</strong></h1>
+                            <p class="card-text">Porção Simples N°1</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 15,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/porcoes/porcao5.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/porções/porcao6.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Porção N°6</strong></h1>
+                            <p class="card-text">Porção Simples N°2</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 25,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/porcoes/porcao6.html">Saiba Mais</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -227,7 +250,7 @@
     <footer class="text-muted py-5">
         <div class="container">
             <p class="float-end mb-1">
-                <a class="botao-personalizado" href="#">Volte ao Topo</a>
+                <a id="botao-personalizado2" type="button" class="btn btn-secondary" href="#">⇪ Volte ao Topo ⇪</a>
             </p>
     </footer>
 
