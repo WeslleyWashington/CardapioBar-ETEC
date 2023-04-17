@@ -135,6 +135,7 @@
     </header>
 
     <main>
+        <!--Apresentação Superior-->
 
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
@@ -146,40 +147,172 @@
             </div>
         </section>
 
+        <!--Começo dos Cards-->
+
         <div id="fundoCard" class="album py-5 bg-light">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
+                    <!--Primeiro Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato1.webp" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°1</strong></h1>
-                            <p class="card-text">Prato de Picanha com Fritas e Salada</p>
+                            <p class="card-text">Prato de Picanha e Salada</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato1.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato1">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato1.webp" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°1</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato Picanha e Salada, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Segundo Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato2.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°2</strong></h1>
                             <p class="card-text">Prato de Filé de Frango e Salada</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato2.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato2">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato2.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°2</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Filé de Frango e Salada, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
+
+                    <!--Terceiro Card-->
 
                     <div id="cardizin" class="card">
                         <img id="image" src="../img/Pratos/prato3.jpg" width="100%" height="225" alt="">
@@ -192,99 +325,542 @@
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato3.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato3">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato3.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°3</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6 id="textosFilhos">Prato Verde com Filé de Frango, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
+                    <!--Quarto Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato4.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°4</strong></h1>
-                            <p class="card-text">Macarronada com Almondegas</p>
+                            <p class="card-text">Prato de Macarrão com Almondegas</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato4.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato4">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato4.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°4</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Macarrão com Almondegas, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Quinto Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato5.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°5</strong></h1>
-                            <p class="card-text">Feijoada</p>
+                            <p class="card-text">Prato de Feijoada</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato5.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato5">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato5.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°5</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Feijoada, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Sexto Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato6.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°6</strong></h1>
-                            <p class="card-text">Macarronada com Carne Moida</p>
+                            <p class="card-text">Prato de Macarrão com Carne Moida</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato6.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato6">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato6.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°6</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Macarrão com Carne Moida, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Setimo Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato7.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°7</strong></h1>
-                            <p class="card-text">Lasanha Tradicional</p>
+                            <p class="card-text">Prato de Lasanha</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato7.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato7">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato7.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°7</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Lasanha, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Oitavo Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato8.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°8</strong></h1>
-                            <p class="card-text">Strogonoff</p>
+                            <p class="card-text">Prato de Strogonoff</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato8.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato8">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato8.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°8</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Strogonoff, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Nono Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Pratos/prato9.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Prato N°9</strong></h1>
-                            <p class="card-text">Salmão com Legumes e Verduras</p>
+                            <p class="card-text">Prato de Salmão com Legumes e Verduras</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/segEntrada/prato9.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato9">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Pratos/prato9.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Prato N°9</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Prato de Salmão com Legumes e Verduras, feito com produtos selecionados e de alta qualidade!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
+
+                    <!--Fim dos Cards-->
 
                 </div>
             </div>
