@@ -8,7 +8,8 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="../img/logo.png" type="imagem.png">
+    <link rel="icon" href="../img/logotipo.png" type="imagem.png">
+
 
     <style>
         body {
@@ -17,17 +18,6 @@
         
         #navbar {
             background-color: rgba(58, 57, 57, 0.822);
-        }
-        
-        .botao-personalizado {
-            border: 2px solid rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            font-family: Sans-serif;
-            font-size: 20px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
         }
         
         #food {
@@ -92,27 +82,42 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        .botao-personalizado2 {
-            border: 1.5px solid rgb(44, 44, 44);
-            background-color: rgba(255, 255, 255, 0.801);
-            color: rgb(44, 44, 44);
-            font-family: Sans-serif;
-            font-size: 15px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-        
         #cardizin {
             border: 1px solid rgb(0, 0, 0);
             border-radius: 5px;
         }
         
         #image {
+            border: 1px solid rgb(0, 0, 0);
             border-radius: 5px;
+            margin-top: 5px;
+        }
+        
+        #valor {
+            color: rgb(25, 136, 84);
+        }
+        
+        #textosFilhos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        #botao-personalizado {
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
+        }
+        
+        #botao-personalizado2 {
+            font-family: Sans-serif;
+            font-size: 20px;
+            padding: 10px auto;
+            border-radius: 10px;
         }
     </style>
-
 
 </head>
 
@@ -122,149 +127,741 @@
 
         <div id="navbar" class="navbar navbar-dark  shadow-sm">
             <div class="container">
-                <a href="../index.html" class="navbar-brand d-flex align-items-center">
-                    <strong class="botao-personalizado"> ⇦ Voltar ao Inicio</strong>
+                <a id="botao-personalizado" type="button" class="btn btn-light" href="../index.html" class="navbar-brand d-flex align-items-center">
+                    <strong> ⇦ Voltar ao Inicio</strong>
                 </a>
-
             </div>
         </div>
     </header>
 
     <main>
+        <!--Apresentação Superior-->
 
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div id="food" class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Bebidas</h1>
-                    <p class="lead text-muted">Temos Diverss Bebidas Alcoolicas e Sem Alcool.</p>
+                    <h1 class="fw-light"><strong>Bebidas</strong></h1>
+                    <p><strong>Temos Diversas Bebidas</strong></p>
+
                 </div>
             </div>
         </section>
 
-        <div class="album py-5 bg-light">
+        <!--Começo dos Cards-->
+
+        <div id="fundoCard" class="album py-5 bg-light">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col" width="100%" height="225">
 
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida1.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 1</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida1.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
+                    <!--Primeiro Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/bebidas/bebida1.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°1</strong></h1>
+                            <p class="card-text">Dose de Whisky Cowboy</p>
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida2.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 2</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida2.html">Saiba Mais</a>
-                                    </p>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 20,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida1">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida1.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°1</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Dose de Whisky Cowboy!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
+
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida3.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 3</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida3.html">Saiba Mais</a>
-                                    </p>
+
+                    <!--Segundo Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida2.jfif" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°2</strong></h1>
+                            <p class="card-text">Dose de Malandrão de Whisky</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 16,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida2">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida2.jfif" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°2</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Dose de Malandrão de Whisky!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Terceiro Card-->
+
+                    <div id="cardizin" class="card">
+                        <img id="image" src="../img/Bebidas/bebida3.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°3</strong></h1>
+                            <p class="card-text">Bebidas com Vodka</p>
+                        </div>
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 15,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida3">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida3.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°3</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6 id="textosFilhos">Bebidas com Vodka!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida4.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 4</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida4.html">Saiba Mais</a>
-                                    </p>
+                    <!--Quarto Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida4.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°4</strong></h1>
+                            <p class="card-text">Cerveja Budweiser</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 12,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida4">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida4.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°4</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Cerveja Budweiser!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida5.webp" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 5</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida5.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida6.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 6</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida6.html">Saiba Mais</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida7.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 7</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida7.html">Saiba Mais</a>
-                                    </p>
+                    <!--Quinto Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida5.webp" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°5</strong></h1>
+                            <p class="card-text">Cerveja Heineken</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 12,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida5">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida5.webp" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°5</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Cerveja Heineken!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
+
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida8.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 8</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida8.html">Saiba Mais</a>
-                                    </p>
+
+                    <!--Sexto Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida6.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°6</strong></h1>
+                            <p class="card-text">Refrigerantes</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 08,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalPrato6">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalPrato6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida6.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°6</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Refrigerantes!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
+
                     </div>
-                    <div class="col" width="100%" height="225">
-                        <div id="cardizin" class="card shadow-sm">
-                            <img src="../img/Bebidas/bebida9.jpg" width="100%" height="225" alt="">
-                            <div class="card-body">
-                                <h1>Bebida 9</h1>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <p class="float-end mb-1">
-                                        <a class="botao-personalizado2" href="../pag/bebidas/bebida9.html">Saiba Mais</a>
-                                    </p>
+
+                    <!--Setimo Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida7.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°7</strong></h1>
+                            <p class="card-text">Drinks com Frutas</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 25,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida7">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida7.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°7</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Drinks com Frutas!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
+
                     </div>
+
+                    <!--Oitavo Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida8.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°8</strong></h1>
+                            <p class="card-text">Caipifruta</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 17,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida8">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida8.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°8</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Caipifruta!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Nono Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Bebidas/bebida9.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Bebida N°9</strong></h1>
+                            <p class="card-text">Sucos Naturais</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 10,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida9">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Bebidas/bebida9.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Bebida N°9</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Sucos Naturais!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Fim dos Cards-->
+
                 </div>
             </div>
         </div>
@@ -274,7 +871,7 @@
     <footer class="text-muted py-5">
         <div class="container">
             <p class="float-end mb-1">
-                <a class="botao-personalizado" href="#">Volte ao Topo</a>
+                <a id="botao-personalizado2" type="button" class="btn btn-secondary" href="#">⇪ Volte ao Topo ⇪</a>
             </p>
     </footer>
 
@@ -283,7 +880,5 @@
 
 
 </body>
-
-</html>
 
 </html>

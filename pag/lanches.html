@@ -135,6 +135,7 @@
     </header>
 
     <main>
+        <!--Apresentação Superior-->
 
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
@@ -146,145 +147,720 @@
             </div>
         </section>
 
+        <!--Começo dos Cards-->
+
         <div id="fundoCard" class="album py-5 bg-light">
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
+                    <!--Primeiro Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Lanches/lanche1.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Lanche N°1</strong></h1>
-                            <p class="card-text">2 Lanches Especiais</p>
+                            <p class="card-text">Combo de Lanches</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 70,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche1.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche1">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche1.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°1</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Combo de Lanches!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Segundo Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Lanches/lanche2.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Lanche N°2</strong></h1>
-                            <p class="card-text">Lanche Mega com Batata</p>
+                            <p class="card-text">Mega Lanche com Batata</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 35,00</h2>
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 30,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche2.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche2">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche2.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°2</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Mega Lanche com Batata!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
+
+                    <!--Terceiro Card-->
 
                     <div id="cardizin" class="card">
                         <img id="image" src="../img/Lanches/lanche3.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Lanche N°3</strong></h1>
-                            <p class="card-text">2 Lanches com Pão Integral</p>
+                            <p class="card-text">Combo de Lanche com Pão Integral</p>
                         </div>
                         <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 90,00</h2>
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 80,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche3.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche3">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche3.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°3</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6 id="textosFilhos">Combo de Lanche com Pão Integral!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
+                    <!--Quarto Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Lanches/lanche4.avif" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Lanche N°4</strong></h1>
-                            <p class="card-text">Lanche Dark com Pão Preto e Barbiecue</p>
+                            <p class="card-text">Lanche Dark</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 50,00</h2>
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 20,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche4.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche4">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche4.avif" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°4</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Lanche Dark!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Quinto Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Lanches/lanche5.jpg" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Lanche N°5</strong></h1>
-                            <p class="card-text">Lanche com Molhos, Frista e Refrigerante</p>
+                            <p class="card-text">Lanche com Molhos e Refrigerante</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 37,00</h2>
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 30,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche5.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche5">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche5.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°5</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Lanche com Molhos e Refrigerante!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Sexto Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Lanches/lanche6.avif" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
                             <h1 class="card-title"><strong>Lanche N°6</strong></h1>
-                            <p class="card-text">Lanche Vegano</p>
+                            <p class="card-text">Lanche Especial</p>
                         </div>
+
                         <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 75,00</h2>
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 20,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche6.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche6">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche6.avif" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°6</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Lanche Especial!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
 
+                    <!--Setimo Card-->
+
                     <div id="cardizin" class="card">
+
                         <img id="image" src="../img/Lanches/lanche7.webp" width="100%" height="225" alt="">
                         <div id="textosFilhos" class="card-body">
-                            <h1 class="card-title"><strong>lanche N°7</strong></h1>
-                            <p class="card-text">Lanche Especial 2 com Cebola Roxa</p>
+                            <h1 class="card-title"><strong>Lanche N°7</strong></h1>
+                            <p class="card-text">Lanche Especial 2</p>
                         </div>
-                        <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 38,00</h2>
-                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
-                        </ul>
-                        <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche7.html">Saiba Mais</a>
-                        </div>
-                    </div>
 
-                    <div id="cardizin" class="card">
-                        <img id="image" src="../img/Lanches/lanche8.jpg" width="100%" height="225" alt="">
-                        <div id="textosFilhos" class="card-body">
-                            <h1 class="card-title"><strong>LancheN°8</strong></h1>
-                            <p class="card-text">Lanches Coloridos</p>
-                        </div>
-                        <ul id="textosFilhos" class="list-group list-group-flush">
-                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 27,00</h2>
-                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
-                        </ul>
-                        <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche8.html">Saiba Mais</a>
-                        </div>
-                    </div>
-
-                    <div id="cardizin" class="card">
-                        <img id="image" src="../img/Lanches/lanche9.jpg" width="100%" height="225" alt="">
-                        <div id="textosFilhos" class="card-body">
-                            <h1 class="card-title"><strong>Lanche N°9</strong></h1>
-                            <p class="card-text">Lanche Especial 1 Com Tomate e Alface</p>
-                        </div>
                         <ul id="textosFilhos" class="list-group list-group-flush">
                             <h2 id="valor" class="list-group-item" class="valorprato">R$ 25,00</h2>
                             <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
                         </ul>
+
                         <div id="textosFilhos" class="card-body">
-                            <a type="button" class="btn btn-outline-success btn-lg btn-block" href="../pag/lanche/lanche9.html">Saiba Mais</a>
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalLanche7">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLanche7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche7.webp" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°7</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Lanche Especial 2!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
+
                     </div>
+
+                    <!--Oitavo Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Lanches/lanche8.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°8</strong></h1>
+                            <p class="card-text">Lanche Colorido</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 17,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida8">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche8.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°8</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Lanche Colorido!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Nono Card-->
+
+                    <div id="cardizin" class="card">
+
+                        <img id="image" src="../img/Lanches/lanche9.jpg" width="100%" height="225" alt="">
+                        <div id="textosFilhos" class="card-body">
+                            <h1 class="card-title"><strong>Lanche N°9</strong></h1>
+                            <p class="card-text">Lanche Especial 3</p>
+                        </div>
+
+                        <ul id="textosFilhos" class="list-group list-group-flush">
+                            <h2 id="valor" class="list-group-item" class="valorprato">R$ 28,00</h2>
+                            <p class="list-group-item">Desconto no Valor para Dinheiro ou Pix</p>
+                        </ul>
+
+                        <div id="textosFilhos" class="card-body">
+
+                            <!--Botão que vai abrir o Modal-->
+
+                            <button type="button" class="btn btn-outline-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalBebida9">
+                                Saiba Mais!
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalBebida9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!--Cabeça do Modal-->
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+
+                                        <div id="textosFilhos" class="modal-header">
+                                            <img id="image" src="../img/Lanches/lanche9.jpg" width="100%" height="225" alt="">
+                                            <h1 class="modal-title" id="exampleModalLabel"><strong>Lanche N°9</strong></h1>
+
+                                        </div>
+
+                                        <!--Corpo do Modal-->
+
+                                        <div id="textosFilhos" class="modal-body">
+                                            <h6>Lanche Especial 3!</h6>
+                                        </div>
+
+                                        <!--Parte Inferior do Modal-->
+
+                                        <div class="modal-footer">
+
+                                            <!--Botões do Modal-->
+
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Formas de Pagamento:
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><button class="dropdown-item" href="">Dinheiro</button></li>
+                                                    <li><button class="dropdown-item" href="">Pix</button></li>
+                                                    <li><button class="dropdown-item" href="">Débito</button></li>
+                                                    <li><button class="dropdown-item" href="">Crédito</button></li>
+                                                </ul>
+
+                                                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Confirmar Pedido</button>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Fim dos Cards-->
 
                 </div>
             </div>
