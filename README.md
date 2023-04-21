@@ -9,24 +9,26 @@
 
 <hr>
 
-## - Inicio do Cardapio parte 2!
-![Inicio do Cardapio parte 2](img/Cardapio/cardapio2.png)
+## - Inicio do Cardapio Apresentação dos Pratos!
+![Inicio do Cardapio Apresentação dos Pratos](img/Cardapio/cardapio2.png)
 
 <hr>
 
-## - Exemplo de entrada da Sobremesa!
-![Exemplo de entrada da Sobremesa](img/Cardapio/cardapio3.png)
+## - Exemplo de entrada Lanches!
+![Exemplo de entrada da Lanches](img/Cardapio/cardapio3.png)
 
 <hr>
 
-## - Mostrando a Variedade dos Pratos de Cada Entrada!
+## - Mostrando a Variedade dos Pratos de Cada Entrada com Botão Personalizado!
 ![Mostrando a Variedade dos Pratos de Cada Entrada](img/Cardapio/cardapio4.png)
 
 <hr>
 
-## - Pagina com a descrição do pedido, valor e confirmar e cancelar compra!
+## -Abertura de uma tela no centro ao Clicar em "Saiba Mais!"!
 ![Pagina com a descrição do pedido, valor e confirmar e cancelar compra](img/Cardapio/cardapio5.png)
 
 <hr>
+
+## Projeto de Cardápio com um Toque Profissional com botões interativos, telas separadas para cada tipo de pedido, com opções de formas de pagamento, ao Clicar em "Saiba mais!" aparece uma tela pequena com a descrição do pedido e a confirmação, junto com a forma de pagamento.
 
 ## Ainda está em Manutenção, estou colocando novas funcionalidades com o tempo e estou criando ele domeu jeito, estou colocando coisas que acho que possam ser interessantes na tematica e que atenda as necessidades!
