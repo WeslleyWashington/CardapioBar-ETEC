@@ -5,27 +5,27 @@
 ## Nesse cardapio temos 6 pratos principais e acessando voce tem de 6 a 9 variedades dos pratos ou bebidas, e acessando cada um você é redirecionado para a descrição do prato e o valor, confirmando a compra ou cancelando!
 
 ## - Inicio do Cardapio!
-![Inicio do Cardapio](img/Cardapio/cardapio1.png)
+![Inicio do Cardapio](img/Descrição/cardapioinicio.png)
 
 <hr>
 
 ## - Inicio do Cardapio Apresentação dos Pratos!
-![Inicio do Cardapio Apresentação dos Pratos](img/Cardapio/cardapio2.png)
+![Inicio do Cardapio Apresentação dos Pratos](img/Descrição/cardapio.png)
 
 <hr>
 
 ## - Exemplo de entrada Lanches!
-![Exemplo de entrada da Lanches](img/Cardapio/cardapio3.png)
+![Exemplo de entrada da Lanches](img/Descrição/cardapiop3.png)
 
 <hr>
 
 ## - Mostrando a Variedade dos Pratos de Cada Entrada com Botão Personalizado!
-![Mostrando a Variedade dos Pratos de Cada Entrada](img/Cardapio/cardapio4.png)
+![Mostrando a Variedade dos Pratos de Cada Entrada](img/Descrição/cardapiop4.png)
 
 <hr>
 
 ## -Abertura de uma tela no centro ao Clicar em "Saiba Mais!"!
-![Pagina com a descrição do pedido, valor e confirmar e cancelar compra](img/Cardapio/cardapio5.png)
+![Pagina com a descrição do pedido, valor e confirmar e cancelar compra](img/Descrição/cardapiop5.png)
 
 <hr>
 
